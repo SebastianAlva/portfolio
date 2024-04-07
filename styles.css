@@ -1,0 +1,111 @@
+
+body{
+    margin:0%;
+    padding:auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color:#f8f8ff;
+    text-align: center;
+
+}
+header{
+    
+    text-align: right;
+}
+#navbar{
+    top: 0px;
+    
+    padding:10px;
+    margin:0%;
+    background:black;
+}
+nav span{
+    font-size: large;
+    margin: 20px;
+    
+}
+.main-container{
+    /* background:linear-gradient(0deg,#3E065F 90% , #700B97); */
+    animation: back-ground 10s ease-in-out infinite;
+}
+.welcome{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-section{
+    font-size: 40px;
+    text-align: center; 
+    
+}
+#projects{
+    
+    /* background: linear-gradient(180deg,#3E065F 80%,black  ); */
+    animation:  back-ground 10s ease-in-out infinite;
+    margin:0;
+}
+.target-container{
+    padding: 90px; 
+}
+.row{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+.target{
+    border-radius: 10%;
+    border-style: solid;
+    padding:30px;
+    margin:30px;
+    background-color: #3E065F;
+    width: 300px;
+    max-width: 300px;
+}
+.target img{
+    margin:0;
+    height: 100px;
+    width: 100px;
+}
+.links-pages{
+   /*  background: linear-gradient(180deg,#3E065F 80%,black 2% ); */
+   animation:  back-ground 10s ease-in-out infinite;
+    text-align: center;
+    margin:0;
+}
+.icons{
+    display:flex;
+    justify-content: space-around;
+    
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+footer{
+    margin-bottom:0%;
+    text-align: center;
+    background-color: black;
+}
+img{
+    margin:0%;
+    padding:auto;
+
+}
+@keyframes back-ground {
+    0%{
+       background-color: #3E065F;
+    }
+    50%{
+        background-color: #700B97;
+    }
+    100%{
+        background-color: #3E065F;
+    }
+}
+
+@media (max-width:900px) {
+    .row{
+        flex-direction: column;
+    }
+}
