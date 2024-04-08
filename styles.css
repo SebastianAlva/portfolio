@@ -115,11 +115,6 @@ img{
     }
 }
 
-@media (max-width:900px) {
-    .row{
-        flex-direction: column;
-    }
-}
 
 
 /*aqui va el dibujo*/
@@ -128,7 +123,8 @@ img{
     margin:200px 100px;
     width: 400px;
     height: 400px;
-    top:900px;
+    top:1000px;
+    left:150px;
     border-style: solid;
     border-color:black;
     border-width: 8px;
@@ -356,3 +352,41 @@ img{
 
 /* falta por implementar el chat que va a estar al lado del dibujo,
  el cual tendra una breve descripcion de mi persona.*/
+
+ .chat-box{
+    position: absolute;
+    left:310px;
+    bottom:270px;
+    
+}
+.triangle{
+    
+    position:absolute;
+    height: 0;
+    width: 0;
+    top:-10px;
+    background-color: transparent;
+    border-left: 200px solid transparent;
+    border-right:300px solid transparent;
+    border-bottom: 100px solid whitesmoke;
+    border-top:transparent;
+    z-index: 1;
+    border-style: solid;
+ }
+ .box{
+    position:absolute;
+    height:300px;
+    width: 900px;
+    background-color:whitesmoke;
+    left:50px;
+    bottom:-100px;
+    border-radius: 50%;
+    z-index: 0;
+    color:black;
+ }
+
+ @media (max-width:700px) {
+    .row{
+        flex-direction: column;
+    }
+}
