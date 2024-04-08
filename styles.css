@@ -18,9 +18,11 @@ body{
     
 }
 header{
-    
+    position: fixed;
     text-align: right;
+    width: 100%;
 }
+
 #navbar{
     top: 0px;
    
@@ -132,6 +134,22 @@ img{
     z-index:2;
     border-bottom-width: 20px;
     z-index: 1;
+}
+.box{
+    display: flex;
+    z-index: 0;
+}
+.text{
+    font-size: 25px;
+    margin:auto;
+    padding-left:170px;
+    position: absolute;
+    bottom:50px;
+    right:100px;
+    text-align: left;
+    z-index: 3;
+    
+    
 }
 .border-window{
     position:absolute;
@@ -370,7 +388,7 @@ img{
     border-right:300px solid transparent;
     border-bottom: 100px solid whitesmoke;
     border-top:transparent;
-    z-index: 1;
+    z-index: 0;
     border-style: solid;
  }
  .box{
